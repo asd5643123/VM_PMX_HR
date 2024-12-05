@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-25 16:08:53.563823",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jjpo",
+  "employee_name",
+  "employee_id",
+  "department",
+  "position",
+  "email",
+  "position_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jjpo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "UCL_HR",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u59d3\u540d",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u54e1\u5de5ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u90e8\u9580",
+   "read_only": 1
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "label": "\u8077\u4f4d",
+   "options": "\u7d93\u7406\n\u526f\u7e3d\n\u5de5\u7a0b\u90e8-A\u7d44\u9577\n\u5de5\u7a0b\u90e8-B\u7d44\u9577\n\u5de5\u7a0b\u90e8-\u7d44\u54e1\n\u696d\u52d9\u4e3b\u7ba1\n\u696d\u52d9\u52a9\u7406\n\u6703\u8a08\n\u5009\u7ba1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "\u4fe1\u7bb1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "position_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u8077\u4f4dID",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-27 18:04:52.065934",
+ "modified_by": "Administrator",
+ "module": "UCL_HR_Employee",
+ "name": "UCL_HR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
